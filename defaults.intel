@@ -1,0 +1,15 @@
+# vi:syntax=muttrc
+
+# Use the global defaults first.
+source ~/.mutt/defaults.global
+
+set sendmail = "~/bin/msmtp-enqueue.sh"
+set signature = ~/.mutt/signature.intel
+set record = "~/Mail/intel/Sent"
+
+my_hdr From: Valentin Rusu <valentin.rusu@intel.com>
+my_hdr Organization: Intel Corporation
+
+# Always verify signatures by default.
+set pgp_verify_sig
+push ,e1

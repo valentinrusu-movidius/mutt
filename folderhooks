@@ -1,0 +1,13 @@
+# vi:syntax=muttrc
+
+folder-hook .                       source ~/.mutt/defaults
+#folder-hook "!$"            source ~/.mutt/defaults
+folder-hook =movidius/INBOX                  source ~/.mutt/defaults.movidius
+folder-hook =movidius/INBOX.kde.*$           source ~/.mutt/defaults.kde
+folder-hook =movidius/INBOX.sourceforge.*$   source ~/.mutt/defaults.sourceforge
+folder-hook =movidius/INBOX.i3.*$            source ~/.mutt/defaults.i3
+
+folder-hook =intel/INBOX                     source ~/.mutt/defaults.intel
+folder-hook =intel/Sent                      source ~/.mutt/defaults.intel
+folder-hook =intel/Intel-Linux               source ~/.mutt/defaults.intel-osg
+
